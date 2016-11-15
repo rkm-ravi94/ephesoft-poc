@@ -1,0 +1,6 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL93PyMzBIAcee2ssAAAAA=[0mMohit Belwal
+Building in workspace /var/lib/jenkins/workspace/generate_report
+[generate_report] $ /bin/bash /tmp/hudson6928169638182469270.sh
+Name read from file - git@github.com:nu113r/CI.git master
+Name read from file - git@github.com:nu113r/ContinuousIntegration.git master
+Finished: SUCCESS

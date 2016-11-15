@@ -1,0 +1,14 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL93PyMzBIAcee2ssAAAAA=[0mMohit Belwal
+Building in workspace /var/lib/jenkins/workspace/generate_report
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[generate_report] $ /bin/bash /tmp/hudson167084397125457877.sh
+Working for Repo: git@github.com:nu113r/ContinuousIntegration.git and branch master
+Cloning into 'ContinuousIntegration'...
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Printing all commit messages since last commit:
+RC-7: changed much in readme
+RC-8: changed readme
+RC-8: Added readme
+Finished: SUCCESS

@@ -1,0 +1,36 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL93PyMzBIAcee2ssAAAAA=[0mMohit Belwal
+Building in workspace /var/lib/jenkins/workspace/generate_report
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[generate_report] $ /bin/bash /tmp/hudson4778846453509358839.sh
+Working for Repo: git@github.com:nu113r/ContinuousIntegration.git and branch master
+Checking Health Check URL..
+Cloning into 'ContinuousIntegration'...
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Printing all commit messages since last commit:
+RC-5: neew readme
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  5400    0  5400    0     0   3693      0 --:--:--  0:00:01 --:--:--  3696
+Working for Repo: git@github.com:nu113r/CI.git and branch master
+Checking Health Check URL..
+Cloning into 'CI'...
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Printing all commit messages since last commit:
+RC-4: added new readme md
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  5498    0  5498    0     0   3753      0 --:--:--  0:00:01 --:--:--  3755
+Project git@github.com:nu113r/ContinuousIntegration.git with branch master | Component Stable | Listed below all JIRA ID's
+==============================================================================================================
+Description for JIRA ID: RC-5
+null
+----------------------------------------------------------------------------------------------------------
+Project git@github.com:nu113r/CI.git with branch master | Component Stable | Listed below all JIRA ID's
+==============================================================================================================
+Description for JIRA ID: RC-4
+null
+----------------------------------------------------------------------------------------------------------
+Finished: SUCCESS

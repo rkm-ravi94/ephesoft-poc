@@ -1,0 +1,24 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL93PyMzBIAcee2ssAAAAA=[0mMohit Belwal
+Building in workspace /var/lib/jenkins/workspace/generate_report
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[generate_report] $ /bin/bash /tmp/hudson8206359323186471178.sh
+/var/lib/jenkins/scripts/git_functions.sh: line 16: syntax error near unexpected token `fi'
+/var/lib/jenkins/scripts/git_functions.sh: line 16: `	fi'
+Working for Repo: git@github.com:nu113r/ContinuousIntegration.git and branch master
+Checking Health Check URL..
+Cloning into 'ContinuousIntegration'...
+/tmp/hudson8206359323186471178.sh: line 22: get_all_commits_from_last_commit: command not found
+cut: /var/lib/jenkins/workspace/generate_report/tmp_new_commit_messages: No such file or directory
+fatal: Not a git repository (or any of the parent directories): .git
+Working for Repo: git@github.com:nu113r/CI.git and branch master
+Checking Health Check URL..
+Cloning into 'CI'...
+/tmp/hudson8206359323186471178.sh: line 22: get_all_commits_from_last_commit: command not found
+cut: /var/lib/jenkins/workspace/generate_report/tmp_new_commit_messages: No such file or directory
+fatal: Not a git repository (or any of the parent directories): .git
+Project git@github.com:nu113r/ContinuousIntegration.git with branch master | Component Stable | Listed below all JIRA ID's
+==============================================================================================================
+Project git@github.com:nu113r/CI.git with branch master | Component Stable | Listed below all JIRA ID's
+==============================================================================================================
+Finished: SUCCESS

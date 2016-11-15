@@ -1,0 +1,58 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL93PyMzBIAcee2ssAAAAA=[0mMohit Belwal
+Building in workspace /var/lib/jenkins/workspace/generate_report
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[generate_report] $ /bin/bash /tmp/hudson8240162368760223527.sh
+Working for Repo: git@github.com:nu113r/ContinuousIntegration.git and branch master
+Cloning into 'ContinuousIntegration'...
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Printing all commit messages since last commit:
+RC-7: changed much in readme
+RC-8: changed readme
+RC-8: Added readme
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  9586    0  9586    0     0   6514      0 --:--:--  0:00:01 --:--:--  6512
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 14461    0 14461    0     0   6851      0 --:--:--  0:00:02 --:--:--  6853100 14461    0 14461    0     0   6850      0 --:--:--  0:00:02 --:--:--  6853
+Description for JIRA ID: RC-7
+Username for all the servers: nveerapalli
+Password for all the servers: "Budha007!" or "NodeFire007!"
+
+1) Make sure that you have sudo access on 10.184.173.90, 10.184.173.91, 10.184.174.25, 10.184.174.36, 10.184.174.42, 10.184.174.46, 10.184.174.38, 10.184.174.151 and 10.184.174.149.
+
+2) On 10.184.174.149, install Puppet Foreman. There may already be puppet master installed there so check first.
+
+3) On 10.184.173.90 (Host Group: Best Bets Prod), git repo is: https://github.corp.ebay.com/neemehta/bestbets. Use "master" branch. DB name is "bestbetsnew". DB username/password should bebestbetsuser/bestbetspassword. DB root password is "mete4loW". DB IP is 10.184.174.36. Test the site from the browser. You may get access denied or some warnings regarding permissions to create files. Ignore those. As long as you are able to see the site on the browser, that's fine.
+
+5) On 10.184.174.38 (Host Group: Publishing Prod), git repo is https://github.corp.ebay.com/CIO-CustomApps/Publishing. Use "dev" branch. DB is "publishing". DB username/password is publishinguser/publishingpassword. DB root password is "mete4loW". DB IP is 10.184.174.42. Test the site from the browser. You may get access denied or some warnings regarding permissions to create files. Ignore those. As long as you are able to see the site on the browser, that's fine.
+
+6) On 10.184.174.151 (Host Group: Search Indexing Prod), git repo is https://github.corp.ebay.com/CIO-CustomApps/SearchIndexing. Use "master" branch. DB is "sharepoint". DB username/password is sharepointuser/sharepointpassword. DB root password is "mete4loW". DB IP is 10.184.174.46. Test the site from the browser. You may get access denied or some warnings regarding permissions to create files. Ignore those. As long as you are able to see the site on the browser, that's fine.
+
+7) On 10.184.173.91 and 10.184.174.25, GlusterFS is already installed. Create three volumes: bestbets-files-volume (in /hub/bestbets directory), publishing-files-volume (in /hub/publishing directory) and (searchindexing-files-volume in /hub/searchindexing directory).
+\n\n
+Description for JIRA ID: RC-8
+Username: nveerapalli
+Password: "Buddha007!" or "NodeFire007!" or "SC_Z:(zz[s8rRsx"
+
+This task needs to be done manually.
+
+On 10.184.173.39, 10.184.173.40 and 10.184.173.41, you have installed 3 GlusterFS volumes: publishing-files-volume, bestbets-files-volume and searchindexing-files-volume.
+
+We need to mount the above 3 volumes in following six Drupal web servers. Note that although  am providing IP addresses, you will need to use the hostnames for mounting. You can find hostname of a server by executing "hostname -f" command.
+
+1) On 10.184.173.84, mount 10.184.173.39:/bestbets-files-volume at /data/bestbets-files. You have already installed Best Bets code at /usr/share/nginx/www on 10.184.173.84. Make a symlink from /usr/share/nginx/www/sites/default/files to /data/bestbets-files. Make sure that /usr/share/nginx/www/sites/default/files and /data/bestbets-files are writable by www-data user. Go to the URL http://10.184.173.84 on the browser and verify that the site is accessible.
+
+2) On 10.184.173.85, mount 10.184.173.40:/bestbets-files-volume at /data/bestbets-files. You have already installed Best Bets code at /usr/share/nginx/www on 10.184.173.85. Make a symlink from /usr/share/nginx/www/sites/default/files to /data/bestbets-files. Make sure that /usr/share/nginx/www/sites/default/files and /data/bestbets-files are writable by www-data user. Go to the URL http://10.184.173.85 on the browser and verify that the site is accessible.
+
+3) On 10.184.173.70, mount 10.184.173.41:/publishing-files-volume at /data/publishing-files. You have already installed Publishing code at /usr/share/nginx/www on 10.184.173.70. Make a symlink from /usr/share/nginx/www/sites/default/files to /data/publishing-files. Make sure that /usr/share/nginx/www/sites/default/files and /data/publishing-files are writable by www-data user. Go to the URL http://10.184.173.70 on the browser and verify that the site is accessible.
+
+4) On 10.184.173.72, mount 10.184.173.39:/publishing-files-volume at /data/publishing-files. You have already installed Publishing code at /usr/share/nginx/www on 10.184.173.72. Make a symlink from /usr/share/nginx/www/sites/default/files to /data/publishing-files. Make sure that /usr/share/nginx/www/sites/default/files and /data/publishing-files are writable by www-data user. Go to the URL http://10.184.173.72 on the browser and verify that the site is accessible.
+
+5) On 10.184.173.74, mount 10.184.173.40:/searchindexing-files-volume at /data/searchindexing. You have already installed Searchindexing code at /usr/share/nginx/www on 10.184.173.74. Make a symlink from /usr/share/nginx/www/sites/default/files to /data/searchindexing-files. Make sure that /usr/share/nginx/www/sites/default/files and /data/searchindexing-files are writable by www-data user. Go to the URL http://10.184.173.74 on the browser and verify that the site is accessible.
+
+6) On 10.184.173.75, mount 10.184.173.41:/searchindexing-files-volume at /data/searchindexing. You have already installed Searchindexing code at /usr/share/nginx/www on 10.184.173.75. Make a symlink from /usr/share/nginx/www/sites/default/files to /data/searchindexing-files. Make sure that /usr/share/nginx/www/sites/default/files and /data/searchindexing-files are writable by www-data user. Go to the URL http://10.184.173.75 on the browser and verify that the site is accessible.
+\n\n
+Finished: SUCCESS

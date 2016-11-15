@@ -1,0 +1,13 @@
+Started by user [8mha:AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgZu/dLi1CL93PyMzBIAcee2ssAAAAA=[0mMohit Belwal
+Building in workspace /var/lib/jenkins/workspace/generate_report
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[generate_report] $ /bin/bash /tmp/hudson4117661823199122260.sh
+Working for Repo: git@github.com:nu113r/ContinuousIntegration.git master
+git@github.com:nu113r/ContinuousIntegration.git master
+/var/lib/jenkins/scripts/git_functions.sh: line 10: cd: /var/lib/jenkins/workspace/generate_report/ContinuousIntegration: No such file or directory
+fatal: Not a git repository (or any of the parent directories): .git
+Printing all commit messages since last commit:
+cat: /var/lib/jenkins/workspace/generate_report/tmp_new_commit_messages: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
