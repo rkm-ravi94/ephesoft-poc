@@ -21,7 +21,7 @@ function addBody() {
 }
 
 function startTable() {
-  addContent "<table>"
+  addContent "<table border='1' width='100%' sortable bgcolor='lightgreen'>"
 }
 
 function startRow() {

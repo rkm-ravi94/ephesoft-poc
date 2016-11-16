@@ -7,12 +7,13 @@ function generateReport() {
   addBody
   startHTML
   startTable
-  for jira_id in `cat jiraid.commits`
+  while read -r line
+  #for jira_id in `cat messages.commits`
 	do
     startRow
-    addCell ${jira_id}
+    addCell "${line}"
     endRow
-	done
+	done < messages.commits
   endTable
   endBody
   endHtml
