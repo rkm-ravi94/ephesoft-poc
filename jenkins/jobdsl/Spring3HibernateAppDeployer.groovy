@@ -1,6 +1,7 @@
 mavenJob('Spring3HibernateAppDeployer') {
 	description("I\'ll deploy the application Spring3HibernateApp")
-    logRotator(-1, 10)
+  logRotator(-1, 10)
+  customWorkspace('$JENKINS_HOME/data/Spring3HibernateApp')
 	scm {
    		git {
      		branch('*/master')
