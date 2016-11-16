@@ -7,9 +7,9 @@ create_report_file_for_commits() {
 	git rev-list ${LAST_COMMIT_ID}...${RECENT_COMMIT_ID} > list.commits
 	for commit_id in `cat list.commits`
 	do
-		git log --format=%B -n 1 ${commit_id} | head -1 >> messages.commits
+		git log --format=%B -n 1 ${commit_id} | head -1 > messages.commits
 	done
-	
+
 }
 get_all_commits_from_last_commit(){
 	GIT_REPO="$1"
