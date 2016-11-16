@@ -13,7 +13,7 @@ mavenJob('Spring3HibernateAppBuilder') {
    		}
  	}
   preBuildSteps {
-    shell("echo $GIT_PREVIOUS_COMMIT > previous.commit \n echo $GIT_COMMIT > current.commit")
+    shell("echo \$GIT_PREVIOUS_COMMIT > previous.commit \n echo \$GIT_COMMIT > current.commit")
   }
  	//please enable the maven in your jenkins form jenkins configuration
  	goals('clean package')
