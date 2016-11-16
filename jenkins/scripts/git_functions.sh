@@ -4,7 +4,7 @@ create_report_file_for_commits() {
 	LAST_COMMIT_ID=$1
 	RECENT_COMMIT_ID=$2
 
-	git rev-list ${LAST_COMMIT_ID}..${RECENT_COMMIT_ID} > list.commits
+	git rev-list ${LAST_COMMIT_ID}...${RECENT_COMMIT_ID} > list.commits
 }
 get_all_commits_from_last_commit(){
 	GIT_REPO="$1"
