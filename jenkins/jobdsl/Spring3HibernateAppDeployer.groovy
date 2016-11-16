@@ -12,6 +12,9 @@ mavenJob('Spring3HibernateAppDeployer') {
      		}
    		}
  	}
+  preBuildSteps {
+    shell("echo $GIT_PREVIOUS_COMMIT > previous.commit \n echo $GIT_COMMIT > current.commit")
+  }
  	//please enable the maven in your jenkins form jenkins configuration
  	goals('clean package')
  	rootPOM('Spring3HibernateApp/pom.xml')
