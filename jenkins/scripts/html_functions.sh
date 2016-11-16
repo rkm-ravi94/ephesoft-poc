@@ -23,3 +23,16 @@ function addBody() {
 function startTable() {
   addContent "<table>"
 }
+
+function startRow() {
+  addContent "<tr>"
+}
+
+function addCell() {
+  CONTENT=$1
+  addContent "<td>$1</td>"
+}
+
+function endRow() {
+  addContent "</tr>"
+}
