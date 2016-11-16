@@ -36,3 +36,15 @@ function addCell() {
 function endRow() {
   addContent "</tr>"
 }
+
+function endTable() {
+  addContent "</table>"
+}
+
+function endBody() {
+  addContent "</body>"
+}
+
+function endHtml() {
+  addContent "</html>"
+}
