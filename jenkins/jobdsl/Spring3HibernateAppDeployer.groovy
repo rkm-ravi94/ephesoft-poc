@@ -12,6 +12,6 @@ mavenJob('Spring3HibernateAppDeployer') {
    		}
  	}
  	//please enable the maven in your jenkins form jenkins configuration
- 	goals('clean install')
+ 	goals('clean package')
  	rootPOM('Spring3HibernateApp/pom.xml')
 }
