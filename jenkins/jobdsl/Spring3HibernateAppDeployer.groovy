@@ -4,7 +4,7 @@ mavenJob('Spring3HibernateAppDeployer') {
   customWorkspace('$JENKINS_HOME/data/Spring3HibernateApp')
 	scm {
    		git {
-     		branch('*/master')
+     		branch('*/dev-OrclCiCdPOC')
      		remote {
        			name('')
        			refspec('')
