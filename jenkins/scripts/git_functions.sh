@@ -4,10 +4,13 @@ create_report_file_for_commits() {
 	LAST_COMMIT_ID=$1
 	RECENT_COMMIT_ID=$2
 
+	echo "Last commit Id: $LAST_COMMIT_ID"
+	echo "Recent commit Id: $RECENT_COMMIT_ID"
 	git rev-list ${LAST_COMMIT_ID}...${RECENT_COMMIT_ID} > list.commits
+	echo "" > messages.commits
 	for commit_id in `cat list.commits`
 	do
-		git log --format=%B -n 1 ${commit_id} | head -1 > messages.commits
+		git log --format=%B -n 1 ${commit_id} | head -1 >> messages.commits
 	done
 
 }
