@@ -8,7 +8,6 @@ function generateReport() {
   startHTML
   startTable
   while read -r line
-  #for jira_id in `cat messages.commits`
 	do
     startRow
     addCell "${line}"
