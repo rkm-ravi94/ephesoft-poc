@@ -10,7 +10,9 @@ function generateReport() {
   while read -r jiraid
 	do
     startRow
+    JIRA_TITLE=`get_jira_id_description ${jiraid}`
     addCell "${jiraid}"
+    addCell "${JIRA_TITLE}"
     endRow
 	done < jiraid.commits
   endTable
