@@ -7,12 +7,12 @@ function generateReport() {
   addBody
   startHTML
   startTable
-  while read -r line
+  while read -r jiraid
 	do
     startRow
-    addCell "${line}"
+    addCell "${jiraid}"
     endRow
-	done < messages.commits
+	done < jiraid.commits
   endTable
   endBody
   endHtml
