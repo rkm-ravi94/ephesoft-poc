@@ -4,7 +4,7 @@ job('Spring3HibernateAppReportGenerator') {
   customWorkspace('$JENKINS_HOME/data/Spring3HibernateApp')
 
   steps {
-    shell("#!/bin/bash \n echo 'I will generate the report for commits lying between' \n cat previous.commit current.commit \n source ${JENKINS_HOME}/scripts/functions/git_functions.sh \n source /var/jenkins_home/scripts/functions/shell_functions.sh \n create_report_file_for_commits `cat previous.commit` `cat current.commit` \n cat list.commits \n cat messages.commits \n extract_commit_ids_from_commit_messages_file \n cat jiraid.commits")
+    shell("#!/bin/bash \n echo 'I will generate the report for commits lying between' \n cat previous.commit current.commit \n source ${JENKINS_HOME}/scripts/functions/git_functions.sh \n source /var/jenkins_home/scripts/functions/shell_functions.sh \n source /var/jenkins_home/scripts/functions/html_functions.sh \n source /var/jenkins_home/scripts/functions/report_generator.sh \n source /var/jenkins_home/jira.properties \n create_report_file_for_commits `cat previous.commit` `cat current.commit` \n cat list.commits \n cat messages.commits \n extract_commit_ids_from_commit_messages_file \n cat jiraid.commits \n generateReport")
   }
 
 	publishers {
