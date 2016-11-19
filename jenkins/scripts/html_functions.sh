@@ -1,6 +1,6 @@
 function setHTMLFile() {
   HTML_FILE=$1
-  echo "" > ${HTML_FILE}
+  >${HTML_FILE}
 }
 
 function addContent() {
