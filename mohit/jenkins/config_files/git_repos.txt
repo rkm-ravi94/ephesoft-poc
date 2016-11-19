@@ -1,2 +1,0 @@
-git@github.com:nu113r/ContinuousIntegration.git master http://192.168.33.11:8080/index.html
-git@github.com:nu113r/CI.git master http://192.168.33.11:8080/index.html
