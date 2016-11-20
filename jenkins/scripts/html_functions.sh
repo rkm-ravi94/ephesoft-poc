@@ -28,6 +28,11 @@ function startRow() {
   addContent "<tr>"
 }
 
+function addHeader() {
+  CONTENT=$1
+  addContent "<th>$1</th>"
+}
+
 function addCell() {
   CONTENT=$1
   addContent "<td>$1</td>"
