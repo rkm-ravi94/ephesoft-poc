@@ -4,6 +4,6 @@ job('universeLicenseDeployer') {
   customWorkspace('$JENKINS_HOME/data/universe_license')
 
   steps {
-    shell("echo 'I will deploy code to app server'")
+    shell("echo 'I will deploy code to app server' \n today_date=`date +\"%m-%d-%y\"` \n mkdir -p ${JENKINS_HOME}/deployments/universeLicense/${today_date} \n cp ${JENKINS_HOME}/data/universe_license/target/*.war ${JENKINS_HOME}/deployments/universeLicense/${today_date}/.")
   }
  }
